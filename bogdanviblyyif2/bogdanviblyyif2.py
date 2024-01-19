@@ -1,5 +1,5 @@
-﻿from datetime import datetime
-import math
+﻿from datetime import *
+import math 
 import random
 
 
@@ -110,7 +110,59 @@ import random
 #         print("Te olete suur ",sugu)
 
 
-# ülesanne 8
+#ülesanne 8(1)
+#from datetime import *
+#from random import *
+#arve_nr= date.today()
+#print(arve_nr)
+#tsekk="Arve: "+str(arve_nr)+"/nToode Hind Kogus Summa/n"
+#summa=0
+#for toode in ["Piim","Leib","Komm"]:
+#    hind=randint(50,150)/100
+#    v=input("Toode:"+toode+"Hind:"+str(hind)+"/Kas tahad osta?").lower()
+#    if v=="jah":
+#        mitu=int(input("Mitu? "))
+#        tsekk+=toode+" "+str(hind)+" "+str(mitu)+" "+str(mitu*hind)+"/n"
+#    summa+=mitu*hind
+#tsekk+="Kokku maksta: "+str(summa)
+#print(tsekk)
+#while True:
+#    raha=float(input("Maksa "+str(summa)))
+#    if raha==summa:
+#        print("Tänan ostu eest!")
+#        break
+#    elif raha>summa:
+#        print("Tänan ostu eest! Tagasi "+str(raha-summa))
+#        break
+#    else:
+#        summa-=raha
+#        print("Maksa veel"+str(summa))
+
+#toode="Piim"
+#hind=randint(50,150)/100
+#v=input("Toode:"+toode+"Hind:"+str(hind)+"/Kas tahad osta?").lower()
+#if v=="jah":
+#    mitu=int(input("Mitu? "))
+
+#raha=float(input("Maksa "+str(summa))
+#if raha==summa:
+#    print("Tänan ostu eest!")
+#elif raha>summa:
+#    print("Tänan ostu eest! Tagasi "+str(raha-summa))
+#else:
+#    print("Maksa veel"+str(summa-raha))
+
+
+
+
+
+
+
+
+
+
+
+# ülesanne 8(v2)
 
 
 # tahabOstaPiim=input("Kas tahate osta piima? jah/ei: ")
@@ -174,15 +226,12 @@ import random
 
 # ülesanne 11
 
-# synniaasta=int(input("Sisestage oma sünniaasta: "))
-# praeguAasta = datetime.now().year
-# vanus=praeguAasta-synniaasta
-
-# if vanus % 10 == 0:
-#     print("See on juubil")
-
-# else:
-#     print("See ei ole juubil")
+#ta=date.today().year
+#sp=date(int(input("Sünniaasta: ")),int(input("Sünnikuu: ")),int(input("Sünnipäev: ")))
+#if (ta-sp)%5==0:
+#    print("Juubel")
+#else:
+#    print("Tavaline sünnipäev")
 
 
 # ülesanne 12
@@ -213,10 +262,18 @@ import random
 #     print("Te ei sobi")
     
      
+#ülesNNE 14
 
-#ülesanne 14
+maht=int(input("Bussi maht: "))
+i=int(input("Inimeste arv: "))
+ba=round(i/maht) #2,3->2
+if i%maht !=0:
+    ba+=1
+    vb=i%maht
+    print("Kokku on vaja {0} bussi ja viimasel sõidavad {1} inimest".format(ba,vb))
+#ülesanne 14(2)
 
-# bussiMahtuvus=int(input("Sisestage 1 bussi mahutavus: "))
+# bussiMahtuvus=int(input("Sisestage ühe bussi mahutavus: "))
 # inimesteArv=int(input("Sisestage inimeste arv: "))
 
 # bussideArv = math.ceil(inimesteArv / bussiMahtuvus)
